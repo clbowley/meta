@@ -3,9 +3,30 @@ html {
   background-color: blue !important;
 }
 
-.nav-menu-link.journal {
-	opacity: 1.0 !important;
+a:active {
+  background-color: transparent !important;
 }
+
+.hover-only:active {
+
+pointer-events: none;
+
+}
+
+
+.nav-menu-link.w--current {
+
+opacity: 1.0 !important;
+
+}
+
+@media screen and (max-width: 767px) .nav-menu-link.w--current {
+
+font-size: 2em;
+
+}
+
+
 
 .nav-button-bg {
   backdrop-filter: blur(10px);
