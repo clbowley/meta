@@ -125,21 +125,21 @@ function alignNav() {
       currentSection = "journal";
       console.log("currentSection = "+currentSection);
 			$('.nav-menu-inner').css("transform","translate3d(0px, 33.33333%, 0px)"); 
-			$('.nav-menu-link.journal').css("opacity","1.0"); 
+      $('.nav-menu-link.journal').addClass("current");
 
     } else if($('body').hasClass('library')) {
   	
 			currentSection = "library";
       console.log("currentSection = "+currentSection);
   		$('.nav-menu-inner').css("transform","translate3d(0px, -33.33333%, 0px)"); 
-      $('.nav-menu-link.library').css("opacity","1.0"); 
+      $('.nav-menu-link.library').addClass("current");
 
      } else if($('body').hasClass('studio')) {
   	
 			currentSection = "studio";
       console.log("currentSection = "+currentSection);
   		$('.nav-menu-inner').css("transform","translate3d(0px, 0px, 0px)"); 
-      $('.nav-menu-link.studio').css("opacity","1.0"); 
+      $('.nav-menu-link.studio').addClass("current");
  
  
  } else { console.log("Nah"); }
