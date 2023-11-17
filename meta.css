@@ -1,5 +1,6 @@
 html {
 	overflow: hidden;
+  background-color: red !important;
 }
 
 .nav-menu-link.journal {
