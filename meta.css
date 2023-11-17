@@ -25,14 +25,14 @@ html {
 }
 
 .swiper-pagination {
-    top: 30px !important; 
+    /* top: 30px !important; 
     left: 60px !important; 
     right: 60px !important;
     bottom: auto !important;
     height: auto !important; 
     width: auto !important; 
     display: flex;
-		z-index: 9999 !important;
+		z-index: 9999 !important; */
     gap: 3px !important; 
     transition: opacity 0.5s ease;
 }
