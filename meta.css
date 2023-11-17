@@ -14,7 +14,7 @@ pointer-events: none;
 }
 
 
-.nav-menu-link.w--current {
+.nav-menu-link.w--current, .nav-menu-link.current {
 
 opacity: 1.0 !important;
 
