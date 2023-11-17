@@ -43,7 +43,7 @@ html {
     display: inline-block !important; 
     /* border-radius: 50%; */
     background: rgba(255,255,255,1) !important; 
-    opacity: .3 !important; 
+    opacity: .1 !important; 
     border-radius: 0 !important;
 }
 
