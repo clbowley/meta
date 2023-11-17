@@ -154,7 +154,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   console.log('DOM fully loaded and parsed');
   
-  if (window.innerWidth > 480 ) {
+  if (window.innerWidth > 767 ) {
     alignNav();
  }
   
