@@ -1,0 +1,98 @@
+html {
+	overflow: hidden;
+}
+
+.nav-menu-link.journal {
+	opacity: 1.0 !important;
+}
+
+.cursor-wrapper {
+	z-index: 1000;
+}
+
+.swiper-slide-active {
+	opacity: 1.0;
+}
+
+.swiper-slide-active .swiper-slide-image {
+	filter: blur(0);
+}
+
+.swiper-slide {
+  width: auto !important;
+  transition-property: all !important;
+}
+
+.swiper-pagination {
+    top: 30px !important; 
+    left: 60px !important; 
+    right: 60px !important;
+    bottom: auto !important;
+    height: auto !important; 
+    width: auto !important; 
+    display: flex;
+		z-index: 9999 !important;
+    gap: 3px !important; 
+    transition: opacity 0.5s ease;
+}
+
+.swiper-pagination-bullet {
+		width: 100% !important; 
+    height: 3px !important; 
+    display: inline-block !important; 
+    /* border-radius: 50%; */
+    background: rgba(255,255,255,1) !important; 
+    opacity: .3 !important; 
+    border-radius: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: rgba(255,255,255,1) !important; 
+    opacity: 1.0 !important;
+    
+}
+
+a:active {
+    background-color: transparent !important;
+}
+
+.hover-only:active {
+
+	pointer-events: none;
+
+}
+
+.nav-menu-link.w--current {
+
+	opacity: 1.0 !important;
+
+}
+
+@media screen and (max-width: 767px)  {
+
+  .nav-menu-link.w--current {
+    font-size: 2em;
+  }
+
+}
+
+/* Disable Custom Cursor on iPad Pro */
+@media only screen
+ and (min-device-width: 1024px)
+ and (max-device-width: 1024px)
+ and (orientation: portrait)
+ and (-webkit-min-device-pixel-ratio: 2) {
+
+  body {
+     cursor: default;
+  }
+
+  .cursor-wrapper {
+     display: none;
+  }
+
+  a {
+     cursor: pointer;
+  }
+  
+ }
