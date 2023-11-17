@@ -153,7 +153,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
   console.log('DOM fully loaded and parsed');
   
-  alignNav();
+  if (window.innerWidth > 480 ) {
+    alignNav();
+ }
   
   $(".project-tile-logo").click(function() {
     $(this).siblings(".tile-link").children(".grid-card-link")[0].click();
