@@ -2,52 +2,55 @@
 window.onload = (event) => {
   
   const swiper = new Swiper('.swiper', {
-
-  // Optional parameters
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-    	centeredSlides: false,
-   	  freeMode: {
-  		  enabled: true,
-   			sticky: false,
-        momentumVelocityRatio: 1.6,
-        momentumRatio: 1.1,
-        momentumBounce: true,
-			  },
+    // Optional parameters
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        centeredSlides: false,
+         freeMode: {
+          enabled: true,
+           sticky: false,
+          momentumVelocityRatio: 1.6,
+          momentumRatio: 1.1,
+          momentumBounce: true,
+          },
+      },
+      // when window width is >= 480px
+      480: {
+        freeMode: false,
+      }
+     },
+    cssMode: false,
+    centeredSlides: true,
+    direction: 'horizontal',
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
     },
-    // when window width is >= 480px
-    480: {
-			freeMode: false,
-    }
-   },
-  cssMode: false,
-  centeredSlides: true,
-	direction: 'horizontal',
-  hashNavigation: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-	loop: false,
-  mousewheel: true,
-  on: {
-    slideChange: function () {
-      $('.swiper-cover').fadeTo(0.0) 
-    }
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  simulateTouch: false,
-	slideToClickedSlide: true,
-	slidesPerView: "auto",
-  spaceBetween: 0,
-  speed: 700,
-  zoom: false,
-  resistance: false,
-
-});
+    hashNavigation: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+    loop: false,
+    mousewheel: true,
+    on: {
+      slideChange: function () {
+        $('.swiper-cover').fadeTo(0.0) 
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    resistance: false,
+    simulateTouch: false,
+    slideToClickedSlide: true,
+    slidesPerView: "auto",
+    spaceBetween: 0,
+    speed: 700,
+    zoom: false,
+  });
 
 
 $('#fullscreen').click( function() { 
@@ -147,56 +150,6 @@ function alignNav() {
 
 window.addEventListener('DOMContentLoaded', (event) => {
 
-  // const swiper = new Swiper('.swiper', {
-  //   // Optional parameters
-  //   breakpoints: {
-  //     // when window width is >= 320px
-  //     320: {
-  //       centeredSlides: false,
-  //        freeMode: {
-  //         enabled: true,
-  //          sticky: false,
-  //         momentumVelocityRatio: 1.6,
-  //         momentumRatio: 1.1,
-  //         momentumBounce: true,
-  //         },
-  //     },
-  //     // when window width is >= 480px
-  //     480: {
-  //       freeMode: false,
-  //     }
-  //    },
-  //   cssMode: false,
-  //   centeredSlides: true,
-  //   direction: 'horizontal',
-  //   effect: 'fade',
-  //   fadeEffect: {
-  //     crossFade: true
-  //   },
-  //   hashNavigation: true,
-  //   keyboard: {
-  //     enabled: true,
-  //     onlyInViewport: false,
-  //   },
-  //   loop: false,
-  //   mousewheel: true,
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: 'bullets',
-  //   },
-  //   resistance: false,
-  //   simulateTouch: false,
-  //   slideToClickedSlide: true,
-  //   slidesPerView: "auto",
-  //   spaceBetween: 0,
-  //   speed: 700,
-  //   zoom: false,
-  //   on: {
-  //       slideChange: function () {
-  //         $('.swiper-cover').fadeTo(0.0) 
-  //       }
-  //   },
-  // });
 
   console.log('DOM fully loaded and parsed');
   
