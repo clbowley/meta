@@ -11,6 +11,7 @@ html {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   mask-image: linear-gradient(90deg, black, transparent);
+  -webkit-mask-image: linear-gradient(90deg, black, transparent);
 }
 
 .cursor-wrapper {
