@@ -20,9 +20,12 @@ opacity: 1.0 !important;
 
 }
 
-@media screen and (max-width: 767px) .nav-menu-link.w--current {
+@media screen and (max-width: 767px)  {
+  .nav-menu-link.w--current {
 
-font-size: 2em;
+    font-size: 2em;
+
+  }
 
 }
 
