@@ -141,6 +141,7 @@ function alignNav() {
   		$('.nav-menu-inner').css("transform","translate3d(0px, 0px, 0px)"); 
       $('.nav-menu-link.studio').addClass("current");
  
+      console.log("Aligned!");
  
  } else { console.log("Nah"); }
   
