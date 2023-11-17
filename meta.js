@@ -1,4 +1,6 @@
 window.onload = (event) => {
+
+  console.log("Running!");
   
   const swiper = new Swiper('.swiper', {
   // Optional parameters
