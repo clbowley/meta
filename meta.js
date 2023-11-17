@@ -2,12 +2,12 @@
 // Set up Fullscreen
 
 
-$('#fullscreen').click( function() { 
+// $('#fullscreen').click( function() { 
 
-	console.log("click!");
-	toggleFullScreen(document.body);
+// 	console.log("click!");
+// 	toggleFullScreen(document.body);
 
-});
+// });
 
 function cancelFullScreen() {
     var el = document;
