@@ -2,6 +2,7 @@
 window.onload = (event) => {
   
   const swiper = new Swiper('.swiper', {
+
   // Optional parameters
   breakpoints: {
     // when window width is >= 320px
@@ -30,6 +31,14 @@ window.onload = (event) => {
   },
 	loop: false,
   mousewheel: true,
+  on: {
+    slideChange: function () {
+      $('.swiper-cover').fadeTo(0.0) 
+    }
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
   simulateTouch: false,
 	slideToClickedSlide: true,
 	slidesPerView: "auto",
@@ -37,11 +46,7 @@ window.onload = (event) => {
   speed: 700,
   zoom: false,
   resistance: false,
-  on: {
-  	  slideChange: function () {
-				$('.swiper-cover').fadeTo(0.0) 
-			}
-  },
+
 });
 
 
