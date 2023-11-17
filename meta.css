@@ -7,6 +7,12 @@ html {
 	opacity: 1.0 !important;
 }
 
+.nav-button-bg {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  mask-image: linear-gradient(90deg, black, transparent);
+}
+
 .cursor-wrapper {
 	z-index: 1000;
 }
